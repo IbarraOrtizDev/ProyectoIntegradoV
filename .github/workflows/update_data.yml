@@ -1,0 +1,57 @@
+name: Proyecto Integrador V
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Ejecutar diariamente a medianoche
+
+jobs:
+  ingestion:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Create virtual environment
+      run: python -m venv .venv
+
+    - name: Activate environment
+      run: source .venv/bin/activate
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+
+    - name: Create environment file
+      run: |
+        cat <<EOL > .env
+        URL=https://query1.finance.yahoo.com/v8/finance/chart/TSM?events=capitalGain%7Cdiv%7Csplit&formatted=true&includeAdjustedClose=true&interval=1d&period1=[0]&period2=[1]&symbol=TSM&userYfid=true&lang=en-US&region=US
+        DB_PATH=src/static/historical.db
+        SAMPLE_FILE_PATH=src/static/historica.csv
+        LOGS_DIR_PATH=src/logs
+        EOL
+
+    - name: Run data collection script
+      run: python src/collector.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m 'Update data files [skip ci]'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
