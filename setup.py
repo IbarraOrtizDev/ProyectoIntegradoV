@@ -9,7 +9,8 @@ setup(
         'requests',
         'pandas',
         'openpyxl',
-        'python-dotenv'
+        'python-dotenv',
+        'logger'
     ],
     entry_points={
         'console_scripts': [

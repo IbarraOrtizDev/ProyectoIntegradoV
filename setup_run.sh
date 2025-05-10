@@ -16,9 +16,10 @@ pip install .
 # Crear archivo .env con las variables necesarias
 cat <<EOL > .env
 URL=https://query1.finance.yahoo.com/v8/finance/chart/TSM?events=capitalGain%7Cdiv%7Csplit&formatted=true&includeAdjustedClose=true&interval=1d&period1=[0]&period2=[1]&symbol=TSM&userYfid=true&lang=en-US&region=US
-DB_PATH=src/static/historical.db
-SAMPLE_FILE_PATH=src/static/historica.csv
+DB_PATH=src/static/data/historical.db
+SAMPLE_FILE_PATH=src/static/data/historical
 LOGS_DIR_PATH=src/logs
+NAME_TABLE=historical_data
 EOL
 
 # Ejecutar el script Python
