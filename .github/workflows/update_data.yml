@@ -29,12 +29,6 @@ jobs:
     - name: Activate environment
       run: source .venv/bin/activate
 
-    - name: Verificar y crear directorios si no existen
-      run: |
-        [ ! -d "src/static/data" ] && mkdir -p src/static/data
-        [ ! -d "src/static/models" ] && mkdir -p src/static/models
-        [ ! -d "src/logs" ] && mkdir -p src/logs
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
