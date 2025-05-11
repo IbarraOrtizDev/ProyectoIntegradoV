@@ -3,12 +3,12 @@ name: Proyecto Integrador V
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
   schedule:
-    - cron: '0 5 * * *'  # Ejecutar diariamente a medianoche
+    - cron: '0 0 * * *'  # Ejecutar diariamente a las 12 am UTC
 
 jobs:
   process_data:
