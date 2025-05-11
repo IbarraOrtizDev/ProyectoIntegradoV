@@ -196,3 +196,69 @@
 2025-05-11 19:56:57 - INFO - Obteniendo los datos de la base de datos
 2025-05-11 19:56:57 - INFO - Obteniendo los datos de la base de datos
 2025-05-11 19:56:57 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:00 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:00 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:00 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:00 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:00 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:00 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:00 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:00 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:00 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:00 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:00 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:00 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:00 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:00 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:00 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:00 - INFO - Configurando la consulta
+2025-05-11 20:04:00 - INFO - Configurando la consulta
+2025-05-11 20:04:00 - INFO - Configurando la consulta
+2025-05-11 20:04:00 - INFO - Configurando la consulta
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - No se encontraron datos en la base de datos
+2025-05-11 20:04:00 - INFO - No se encontraron datos en la base de datos
+2025-05-11 20:04:00 - INFO - No se encontraron datos en la base de datos
+2025-05-11 20:04:00 - INFO - No se encontraron datos en la base de datos
+2025-05-11 20:04:00 - INFO - Datos desde 1704067200 hasta 1735689600
+2025-05-11 20:04:00 - INFO - Datos desde 1704067200 hasta 1735689600
+2025-05-11 20:04:00 - INFO - Datos desde 1704067200 hasta 1735689600
+2025-05-11 20:04:00 - INFO - Datos desde 1704067200 hasta 1735689600
+2025-05-11 20:04:00 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:00 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:00 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:00 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:00 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:00 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:00 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:00 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:00 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:00 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:00 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:00 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:00 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:00 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - No hay datos previos en la base de datos, insertando todos los registros
+2025-05-11 20:04:00 - INFO - No hay datos previos en la base de datos, insertando todos los registros
+2025-05-11 20:04:00 - INFO - No hay datos previos en la base de datos, insertando todos los registros
+2025-05-11 20:04:00 - INFO - No hay datos previos en la base de datos, insertando todos los registros
+2025-05-11 20:04:00 - INFO - No hay datos previos en la base de datos, insertando todos los registros
+2025-05-11 20:04:00 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:00 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:00 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:00 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:00 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
