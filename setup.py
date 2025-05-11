@@ -19,7 +19,7 @@ setup(
     },
     include_package_data=True,
     description='Proyecto Integrado V -> Consumir un servicio de Yahoo Finance y almacenar la información en un sqlite3 y en un .csv',
-    long_description=open('README.md').read(),
+    long_description=open('readme.md').read(),
     author='Edwin Alexander Ibarra - Sergio Rios',
     author_email='edwin.ibarra@est.iudigital.edu.co - sergio.rios@est.iudigital.edu.co',
     url='https://github.com/IbarraOrtizDev/IbarraOrtiz_EdwinAlexander_infraestructura-arquitectura-big-data',
