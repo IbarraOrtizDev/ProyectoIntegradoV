@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Ejecutar diariamente a medianoche
+    - cron: '10 0 * * *'  # Ejecutar diariamente a medianoche
 
 jobs:
   ingestion:
