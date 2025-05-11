@@ -8,10 +8,10 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Ejecutar diariamente a medianoche
+    - cron: '0 5 * * *'  # Ejecutar diariamente a medianoche
 
 jobs:
-  ingestion:
+  process_data:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +29,9 @@ jobs:
     - name: Activate environment
       run: source .venv/bin/activate
 
+    - name: Crear directorio para la base de datos
+      run: mkdir -p src/static/data
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -38,8 +41,8 @@ jobs:
       run: |
         cat <<EOL > .env
         URL=https://query1.finance.yahoo.com/v8/finance/chart/TSM?events=capitalGain%7Cdiv%7Csplit&formatted=true&includeAdjustedClose=true&interval=1d&period1=[0]&period2=[1]&symbol=TSM&userYfid=true&lang=en-US&region=US
-        DB_PATH=src/static/historical.db
-        SAMPLE_FILE_PATH=src/static/historical
+        DB_PATH=src/static/data/historical.db
+        SAMPLE_FILE_PATH=src/static/data/historical
         LOGS_DIR_PATH=src/logs
         NAME_TABLE=historical_data
         EOL

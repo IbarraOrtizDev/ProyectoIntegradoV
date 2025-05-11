@@ -115,8 +115,9 @@ ProyectoIntegradoV/
 │   │   ├── queryYahooAdapter.py    # Adaptador para Yahoo Finance
 │   │   └── parseDataYahooQuery.py  # Parser de datos
 │   ├── static/
-│   │   ├── historical.db    # Base de datos SQLite
-│   │   └── historica.csv    # Archivo CSV
+│   ├   |── data/
+|   │   │   ├── historical.db    # Base de datos SQLite
+|   │   │   └── historica.csv    # Archivo CSV
 │   └── logs/                # Directorio de logs
 ├── .env                     # Variables de entorno
 ├── setup.py                 # Configuración del paquete
