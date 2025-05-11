@@ -262,3 +262,65 @@
 2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
 2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
 2025-05-11 20:04:00 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:41 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:41 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:41 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:41 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:41 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:41 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:41 - INFO - Creando la tabla en la base de datos
+2025-05-11 20:04:41 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:41 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:41 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:41 - INFO - Tabla creada exitosamente
+2025-05-11 20:04:41 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:41 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:41 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:41 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-11 20:04:41 - INFO - Configurando la consulta
+2025-05-11 20:04:41 - INFO - Configurando la consulta
+2025-05-11 20:04:41 - INFO - Configurando la consulta
+2025-05-11 20:04:41 - INFO - Configurando la consulta
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Datos encontrados en la base de datos
+2025-05-11 20:04:41 - INFO - Datos encontrados en la base de datos
+2025-05-11 20:04:41 - INFO - Datos encontrados en la base de datos
+2025-05-11 20:04:41 - INFO - Datos encontrados en la base de datos
+2025-05-11 20:04:41 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:41 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:41 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:41 - INFO - Datos obtenidos exitosamente
+2025-05-11 20:04:41 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:41 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:41 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:41 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:41 - INFO - Iniciando el parseo de los datos
+2025-05-11 20:04:41 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:41 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:41 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:41 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:41 - INFO - Insertando los datos en la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Filtrando datos posteriores a 1735655400
+2025-05-11 20:04:41 - INFO - Filtrando datos posteriores a 1735655400
+2025-05-11 20:04:41 - INFO - Filtrando datos posteriores a 1735655400
+2025-05-11 20:04:41 - INFO - Filtrando datos posteriores a 1735655400
+2025-05-11 20:04:41 - INFO - Filtrando datos posteriores a 1735655400
+2025-05-11 20:04:41 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:41 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:41 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:41 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:41 - INFO - Datos insertados exitosamente
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
+2025-05-11 20:04:41 - INFO - Obteniendo los datos de la base de datos
