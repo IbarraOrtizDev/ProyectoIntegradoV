@@ -1,0 +1,62 @@
+2025-05-20 00:29:25 - INFO - Creando la tabla en la base de datos
+2025-05-20 00:29:25 - INFO - Creando la tabla en la base de datos
+2025-05-20 00:29:25 - INFO - Tabla creada exitosamente
+2025-05-20 00:29:25 - INFO - Tabla creada exitosamente
+2025-05-20 00:29:25 - INFO - Creando la tabla en la base de datos
+2025-05-20 00:29:25 - INFO - Creando la tabla en la base de datos
+2025-05-20 00:29:25 - INFO - Creando la tabla en la base de datos
+2025-05-20 00:29:25 - INFO - Creando la tabla en la base de datos
+2025-05-20 00:29:25 - INFO - Tabla creada exitosamente
+2025-05-20 00:29:25 - INFO - Tabla creada exitosamente
+2025-05-20 00:29:25 - INFO - Tabla creada exitosamente
+2025-05-20 00:29:25 - INFO - Tabla creada exitosamente
+2025-05-20 00:29:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-20 00:29:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-20 00:29:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-20 00:29:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-05-20 00:29:25 - INFO - Configurando la consulta
+2025-05-20 00:29:25 - INFO - Configurando la consulta
+2025-05-20 00:29:25 - INFO - Configurando la consulta
+2025-05-20 00:29:25 - INFO - Configurando la consulta
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Datos encontrados en la base de datos
+2025-05-20 00:29:25 - INFO - Datos encontrados en la base de datos
+2025-05-20 00:29:25 - INFO - Datos encontrados en la base de datos
+2025-05-20 00:29:25 - INFO - Datos encontrados en la base de datos
+2025-05-20 00:29:25 - INFO - Datos obtenidos exitosamente
+2025-05-20 00:29:25 - INFO - Datos obtenidos exitosamente
+2025-05-20 00:29:25 - INFO - Datos obtenidos exitosamente
+2025-05-20 00:29:25 - INFO - Datos obtenidos exitosamente
+2025-05-20 00:29:25 - INFO - Iniciando el parseo de los datos
+2025-05-20 00:29:25 - INFO - Iniciando el parseo de los datos
+2025-05-20 00:29:25 - INFO - Iniciando el parseo de los datos
+2025-05-20 00:29:25 - INFO - Iniciando el parseo de los datos
+2025-05-20 00:29:25 - INFO - Iniciando el parseo de los datos
+2025-05-20 00:29:25 - INFO - Insertando los datos en la base de datos
+2025-05-20 00:29:25 - INFO - Insertando los datos en la base de datos
+2025-05-20 00:29:25 - INFO - Insertando los datos en la base de datos
+2025-05-20 00:29:25 - INFO - Insertando los datos en la base de datos
+2025-05-20 00:29:25 - INFO - Insertando los datos en la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Filtrando datos posteriores a 1747425602
+2025-05-20 00:29:25 - INFO - Filtrando datos posteriores a 1747425602
+2025-05-20 00:29:25 - INFO - Filtrando datos posteriores a 1747425602
+2025-05-20 00:29:25 - INFO - Filtrando datos posteriores a 1747425602
+2025-05-20 00:29:25 - INFO - Filtrando datos posteriores a 1747425602
+2025-05-20 00:29:25 - INFO - Datos insertados exitosamente
+2025-05-20 00:29:25 - INFO - Datos insertados exitosamente
+2025-05-20 00:29:25 - INFO - Datos insertados exitosamente
+2025-05-20 00:29:25 - INFO - Datos insertados exitosamente
+2025-05-20 00:29:25 - INFO - Datos insertados exitosamente
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
+2025-05-20 00:29:25 - INFO - Obteniendo los datos de la base de datos
