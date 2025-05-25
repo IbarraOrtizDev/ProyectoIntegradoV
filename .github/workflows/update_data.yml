@@ -50,6 +50,12 @@ jobs:
     - name: Run data collection script
       run: python src/collector.py
 
+    - name: Run data modelling script
+      run: python src/modeller.py
+
+    - name: Run dashboard script
+      run: python src/dashboard.py --save-html
+
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'

@@ -10,7 +10,18 @@ setup(
         'pandas',
         'openpyxl',
         'python-dotenv',
-        'logger'
+        'logger',
+        'scikit-learn',
+        'joblib',
+        'matplotlib',
+        'seaborn',
+        'yfinance',
+        'xgboost',
+        'streamlit',
+        'plotly',
+        'beautifulsoup4',
+        'st-static-export',
+        'altair'
     ],
     entry_points={
         'console_scripts': [
