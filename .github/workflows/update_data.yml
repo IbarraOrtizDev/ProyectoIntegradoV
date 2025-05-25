@@ -65,3 +65,38 @@ jobs:
         git push origin master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy_dashboard:
+    needs: process_data
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+
+    - name: Prepare dashboard files
+      run: |
+        # Crear directorio docs si no existe
+        mkdir -p docs
+        # Copiar el dashboard más reciente a index.html
+        cp src/static/dashboard/dashboard_*.html docs/index.html
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: docs
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
