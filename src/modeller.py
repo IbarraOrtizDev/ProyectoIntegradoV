@@ -10,9 +10,9 @@ from datetime import datetime
 from xgboost import XGBClassifier
 import joblib
 import os
-from .enricher import enriquecer_datos, obtener_features
-from .logger import LoggerService
-from .service.edaService import realizar_eda
+from enricher import enriquecer_datos, obtener_features
+from logger import LoggerService
+from service.edaService import realizar_eda
 
 
 def entrenar(logger: LoggerService):

@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from .logger import LoggerService
+from logger import LoggerService
 
 def enriquecer_datos(df, logger: LoggerService):
     """

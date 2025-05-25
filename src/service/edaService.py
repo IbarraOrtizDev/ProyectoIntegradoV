@@ -1,4 +1,4 @@
-from src.logger import LoggerService
+from logger import LoggerService
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
