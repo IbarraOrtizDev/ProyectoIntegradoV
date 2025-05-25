@@ -56,6 +56,15 @@ jobs:
     - name: Run dashboard script
       run: python src/dashboard.py --save-html
 
+    - name: Prepare dashboard files
+      run: |
+        # Crear directorio docs si no existe
+        mkdir -p docs
+        # Eliminar el archivo index.html si existe
+        rm -f docs/index.html
+        # Copiar el dashboard más reciente a index.html
+        cp src/static/dashboard/dashboard_*.html docs/index.html
+
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
@@ -84,13 +93,6 @@ jobs:
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
-
-    - name: Prepare dashboard files
-      run: |
-        # Crear directorio docs si no existe
-        mkdir -p docs
-        # Copiar el dashboard más reciente a index.html
-        cp src/static/dashboard/dashboard_*.html docs/index.html
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
