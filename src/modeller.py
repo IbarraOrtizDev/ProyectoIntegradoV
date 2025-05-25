@@ -10,7 +10,6 @@ from datetime import datetime
 from xgboost import XGBClassifier
 import joblib
 import os
-from src.logger import LoggerService
 from .enricher import enriquecer_datos, obtener_features
 from .logger import LoggerService
 from .service.edaService import realizar_eda
