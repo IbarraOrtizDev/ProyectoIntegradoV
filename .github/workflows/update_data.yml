@@ -60,10 +60,15 @@ jobs:
       run: |
         # Crear directorio docs si no existe
         mkdir -p docs
-        # Eliminar el archivo index.html si existe
-        rm -f docs/index.html
+        # Encontrar el dashboard más reciente
+        LATEST_DASHBOARD=$(ls -t src/static/dashboard/dashboard_*.html | head -n1)
+        if [ -z "$LATEST_DASHBOARD" ]; then
+          echo "No se encontró ningún archivo de dashboard"
+          exit 1
+        fi
         # Copiar el dashboard más reciente a index.html
-        cp src/static/dashboard/dashboard_*.html docs/index.html
+        cp "$LATEST_DASHBOARD" docs/index.html
+        echo "Dashboard copiado: $LATEST_DASHBOARD -> docs/index.html"
 
     - name: Commit and push changes
       run: |
