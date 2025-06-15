@@ -13,7 +13,11 @@ import os
 from enricher import enriquecer_datos, obtener_features
 from logger import LoggerService
 from service.edaService import realizar_eda
-
+from statsmodels.tsa.arima.model import ARIMA
+from statsmodels.tsa.stattools import adfuller
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+from statsmodels.tsa.arima.model import ARIMA
+import pickle
 
 def entrenar(logger: LoggerService):
     """
@@ -252,12 +256,83 @@ def predecir(logger: LoggerService):
         error_msg = f"Error durante la predicción: {str(e)}"
         logger.error(error_msg)
         return {'error': str(e)}
+
+def entrenar_arima(logger: LoggerService):
+    """
+    Entrena el modelo ARIMA y lo guarda como modelo_arima.pkl
+    """
+    logger.info("Iniciando proceso de entrenamiento del modelo ARIMA")
     
+    try:
+        # Cargar datos
+        logger.info("Cargando datos")
+        data = pd.read_csv('src/static/data/historical.csv', index_col="date")
+        data = data.sort_values(by='date')
+
+        logger.info("Dividiendo datos en entrenamiento y prueba")
+        train_size = int(len(data) * 0.8)
+        train, test = data.iloc[:train_size], data.iloc[train_size:]
+        train_original = train.copy()
+
+        logger.info("Verificando estacionariedad de la serie")
+        result = adfuller(train["close"])
+
+        d = 0
+        while result[1] > 0.05:
+            train["close"] = train["close"].diff()
+            d += 1
+            result = adfuller(train["close"].dropna())
+
+        print(f"Serie de entrenamiento es estacionaria después de {d} diferenciaciones.")
+
+        p = 1
+        q = 1
+        model = ARIMA(train["close"].dropna(), order=(p, d, q))
+        fitted_model = model.fit()
+        forecast = fitted_model.forecast(steps=len(test))
+
+        last_value = train_original["close"].iloc[-1]  # asegúrate de tener una copia de los datos originales
+
+        # Reconstruir los valores a partir del pronóstico de diferencias
+        forecast_values = forecast.cumsum() + last_value
+
+        logger.info("Calculando métricas")
+        # RMSE
+        rmse = np.sqrt(mean_squared_error(test["close"], forecast_values))
+
+        # MAE
+        mae = mean_absolute_error(test["close"], forecast_values)
+
+        logger.info(f"RMSE: {rmse:.2f}")
+        logger.info(f"MAE: {mae:.2f}")
+
+        
+        # Guardar modelo ARIMA, si existe se sobreescribe
+        logger.info("Guardando modelo ARIMA")
+        with open("src/static/models/modelo_arima.pkl", "wb") as f:
+            pickle.dump(fitted_model, f)
+
+        # Guardar métricas
+        logger.info("Guardando métricas")
+        metrics = {
+            "rmse": rmse,
+            "mae": mae,
+            "p": p,
+            "d": d,
+            "q": q
+        }
+        with open("src/static/models/metrics_arima.pkl", "wb") as f:
+            pickle.dump(metrics, f)
+        logger.info("Modelo ARIMA entrenado y guardado exitosamente")
+    except Exception as e:
+        logger.error(f"Error durante el entrenamiento del modelo ARIMA: {str(e)}")
+        raise
 
 def main():
     logger = LoggerService()
     entrenar(logger)
     predecir(logger)
+    entrenar_arima(logger)
 
 if __name__ == '__main__':
     main()

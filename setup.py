@@ -21,7 +21,8 @@ setup(
         'plotly',
         'beautifulsoup4',
         'st-static-export',
-        'altair'
+        'altair',
+        'statsmodels'
     ],
     entry_points={
         'console_scripts': [

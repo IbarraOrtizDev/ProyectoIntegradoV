@@ -12,6 +12,8 @@ import sys
 import os
 from pathlib import Path
 import st_static_export as sse
+import pickle
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # Añadir el directorio src al path de Python
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -169,6 +171,58 @@ def crear_grafico_retornos_altair(df):
     except Exception as e:
         print(f"Error al crear gráfico de retornos: {str(e)}")
         return None
+    
+def crear_grafico_arima(df):
+    """Crea un gráfico de ARIMA usando Altair"""
+    try:
+        # Asegurarse que los datos están limpios
+        train_size = int(len(df) * 0.8)
+        train = df.iloc[:train_size]
+        test = df.iloc[train_size:]
+
+        # Cargar modelo ARIMA
+        with open("src/static/models/modelo_arima.pkl", "rb") as f:
+            modelo_arima = pickle.load(f)
+
+        # Obtener pronóstico
+        forecast = modelo_arima.forecast(steps=len(test))
+
+        # Reconstruir los valores si el modelo fue entrenado con diferencias
+        last_value = train["close"].iloc[-1]
+        forecast_values = forecast.cumsum() + last_value
+        forecast_values.index = test.index
+
+        # Métricas
+        st.write("Métricas del modelo ARIMA")
+        rmse = np.sqrt(mean_squared_error(test["close"], forecast_values))
+        mae = mean_absolute_error(test["close"], forecast_values)
+        mape = np.mean(np.abs((test["close"] - forecast_values) / test["close"])) * 100
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.write(f"RMSE: {rmse:.2f}")
+        with col2:
+            st.write(f"MAE: {mae:.2f}")
+        with col3:
+            st.write(f"MAPE: {mape:.2f}%")
+
+        st.write("Gráfico del pronóstico")
+        # Gráfico
+        plt.figure(figsize=(12, 5))
+        plt.plot(train["close"], label="Entrenamiento")
+        plt.plot(test["close"], label="Real (Test)", color="gray")
+        plt.plot(forecast_values, label="Pronóstico ARIMA", linestyle="--", color="orange")
+        plt.title("Pronóstico con modelo ARIMA cargado")
+        plt.legend()
+        plt.grid(True)
+        plt.tight_layout()
+        st.pyplot(plt)
+
+
+
+
+    except Exception as e:
+        print(f"Error al crear gráfico de ARIMA: {str(e)}")
+        return None
 
 def crear_grafico_volatilidad_altair(df):
     """Crea un gráfico de volatilidad vs retorno usando Altair"""
@@ -289,6 +343,10 @@ def mostrar_dashboard():
                 'retorno_acumulado': '{:.2%}'
             })
         )
+
+        # Gráfico de ARIMA
+        st.subheader("Pronóstico de Precio de Cierre")
+        crear_grafico_arima(df)
         
     except Exception as e:
         st.error(f"Error al cargar el dashboard: {str(e)}")
