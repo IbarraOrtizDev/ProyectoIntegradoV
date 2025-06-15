@@ -217,8 +217,112 @@ def crear_grafico_arima(df):
         plt.tight_layout()
         st.pyplot(plt)
 
+    except Exception as e:
+        print(f"Error al crear gráfico de ARIMA: {str(e)}")
+        return None
+    
+def data_arima(df):
+    """Crea un gráfico de ARIMA usando Altair"""
+    try:
+        # Asegurarse que los datos están limpios
+        train_size = int(len(df) * 0.8)
+        train = df.iloc[:train_size]
+        test = df.iloc[train_size:]
+
+        # Cargar modelo ARIMA
+        with open("src/static/models/modelo_arima.pkl", "rb") as f:
+            modelo_arima = pickle.load(f)
+
+        # Obtener pronóstico
+        forecast = modelo_arima.forecast(steps=len(test))
+
+        # Reconstruir los valores si el modelo fue entrenado con diferencias
+        last_value = train["close"].iloc[-1]
+        forecast_values = forecast.cumsum() + last_value
+        forecast_values.index = test.index
+
+        # Métricas
+        st.write("Métricas del modelo ARIMA")
+        rmse = np.sqrt(mean_squared_error(test["close"], forecast_values))
+        mae = mean_absolute_error(test["close"], forecast_values)
+        mape = np.mean(np.abs((test["close"] - forecast_values) / test["close"])) * 100
+
+        return f"RMSE: {rmse:.2f} \n MAE: {mae:.2f} \n MAPE: {mape:.2f}%"
 
 
+
+    
+    except Exception as e:
+        print(f"Error al crear datos de ARIMA: {str(e)}")
+        return None
+
+def crear_grafico_arima_altair(df):
+    """Crea un gráfico de ARIMA usando Altair"""
+    try:
+        # Asegurarse que los datos están limpios
+        train_size = int(len(df) * 0.8)
+        train = df.iloc[:train_size].copy()
+        test = df.iloc[train_size:].copy()
+
+        # Cargar modelo ARIMA
+        with open("src/static/models/modelo_arima.pkl", "rb") as f:
+            modelo_arima = pickle.load(f)
+
+        # Obtener pronóstico
+        forecast = modelo_arima.forecast(steps=len(test))
+
+        # Reconstruir los valores si el modelo fue entrenado con diferencias
+        last_value = train["close"].iloc[-1]
+        forecast_values = forecast.cumsum() + last_value
+        forecast_values.index = test.index
+
+        # Preparar datos para Altair
+        # Datos de entrenamiento
+        train_data = train.reset_index()
+        train_data['tipo'] = 'Entrenamiento'
+        train_data = train_data[['date', 'close', 'tipo']]
+        
+        # Datos de test real
+        test_data = test.reset_index()
+        test_data['tipo'] = 'Real (Test)'
+        test_data = test_data[['date', 'close', 'tipo']]
+        
+        # Datos de pronóstico
+        forecast_data = pd.DataFrame({
+            'date': test['date'],
+            'close': forecast_values,
+            'tipo': 'Pronóstico ARIMA'
+        })
+        
+        # Combinar todos los datos
+        all_data = pd.concat([train_data, test_data, forecast_data], ignore_index=True)
+        
+        # Crear gráfico con Altair
+        chart = alt.Chart(all_data).mark_line().encode(
+            x=alt.X('date:T', title='Fecha'),
+            y=alt.Y('close:Q', title='Precio de Cierre'),
+            color=alt.Color('tipo:N', 
+                          scale=alt.Scale(
+                              domain=['Entrenamiento', 'Real (Test)', 'Pronóstico ARIMA'],
+                              range=['blue', 'gray', 'orange']
+                          )),
+            strokeDash=alt.StrokeDash('tipo:N',
+                                    scale=alt.Scale(
+                                        domain=['Entrenamiento', 'Real (Test)', 'Pronóstico ARIMA'],
+                                        range=[0, 0, 5]  # Línea punteada solo para pronóstico
+                                    )),
+            tooltip=['date', 'close', 'tipo']
+        ).properties(
+            title='Pronóstico con modelo ARIMA',
+            width='container',
+            height=400
+        ).configure_axis(
+            grid=True
+        ).configure_legend(
+            orient='top'
+        )
+        
+        return chart
 
     except Exception as e:
         print(f"Error al crear gráfico de ARIMA: {str(e)}")
@@ -517,6 +621,19 @@ def guardar_dashboard_como_html():
             text="Dashboard generado automáticamente con st-static-export y Streamlit",
             text_class="footnote"
         )
+
+        # 8. Datos de ARIMA
+        static_html.add_header(id="arima_data", text="Datos de ARIMA", size="H2")
+        arima_data = data_arima(df)
+        static_html.add_text(id="arima_data_text", text=arima_data, text_class="metric")
+
+        # 8. Gráfico de ARIMA
+        static_html.add_header(id="arima_chart", text="Pronóstico de Precio de Cierre", size="H2")
+        chart_arima = crear_grafico_arima_altair(df)
+        if chart_arima is not None:
+            static_html.export_altair_graph(id="arima_chart", graph=chart_arima)
+        else:
+            static_html.add_text(id="arima_error", text="No se pudo generar el gráfico de ARIMA", text_class="metric")
         
         # Crear y guardar el HTML
         str_result = static_html.create_html(return_type="String")
