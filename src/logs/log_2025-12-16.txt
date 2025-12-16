@@ -1,0 +1,216 @@
+2025-12-16 00:32:25 - INFO - Creando la tabla en la base de datos
+2025-12-16 00:32:25 - INFO - Creando la tabla en la base de datos
+2025-12-16 00:32:25 - INFO - Tabla creada exitosamente
+2025-12-16 00:32:25 - INFO - Tabla creada exitosamente
+2025-12-16 00:32:25 - INFO - Creando la tabla en la base de datos
+2025-12-16 00:32:25 - INFO - Creando la tabla en la base de datos
+2025-12-16 00:32:25 - INFO - Creando la tabla en la base de datos
+2025-12-16 00:32:25 - INFO - Creando la tabla en la base de datos
+2025-12-16 00:32:25 - INFO - Tabla creada exitosamente
+2025-12-16 00:32:25 - INFO - Tabla creada exitosamente
+2025-12-16 00:32:25 - INFO - Tabla creada exitosamente
+2025-12-16 00:32:25 - INFO - Tabla creada exitosamente
+2025-12-16 00:32:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-12-16 00:32:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-12-16 00:32:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-12-16 00:32:25 - INFO - Iniciando la consulta de datos de Yahoo Finance
+2025-12-16 00:32:25 - INFO - Configurando la consulta
+2025-12-16 00:32:25 - INFO - Configurando la consulta
+2025-12-16 00:32:25 - INFO - Configurando la consulta
+2025-12-16 00:32:25 - INFO - Configurando la consulta
+2025-12-16 00:32:25 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:25 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:25 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:25 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:25 - INFO - Datos encontrados en la base de datos
+2025-12-16 00:32:25 - INFO - Datos encontrados en la base de datos
+2025-12-16 00:32:25 - INFO - Datos encontrados en la base de datos
+2025-12-16 00:32:25 - INFO - Datos encontrados en la base de datos
+2025-12-16 00:32:25 - INFO - Datos obtenidos exitosamente
+2025-12-16 00:32:25 - INFO - Datos obtenidos exitosamente
+2025-12-16 00:32:25 - INFO - Datos obtenidos exitosamente
+2025-12-16 00:32:25 - INFO - Datos obtenidos exitosamente
+2025-12-16 00:32:26 - INFO - Iniciando el parseo de los datos
+2025-12-16 00:32:26 - INFO - Iniciando el parseo de los datos
+2025-12-16 00:32:26 - INFO - Iniciando el parseo de los datos
+2025-12-16 00:32:26 - INFO - Iniciando el parseo de los datos
+2025-12-16 00:32:26 - INFO - Iniciando el parseo de los datos
+2025-12-16 00:32:26 - INFO - Insertando los datos en la base de datos
+2025-12-16 00:32:26 - INFO - Insertando los datos en la base de datos
+2025-12-16 00:32:26 - INFO - Insertando los datos en la base de datos
+2025-12-16 00:32:26 - INFO - Insertando los datos en la base de datos
+2025-12-16 00:32:26 - INFO - Insertando los datos en la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Filtrando datos posteriores a 1765573202
+2025-12-16 00:32:26 - INFO - Filtrando datos posteriores a 1765573202
+2025-12-16 00:32:26 - INFO - Filtrando datos posteriores a 1765573202
+2025-12-16 00:32:26 - INFO - Filtrando datos posteriores a 1765573202
+2025-12-16 00:32:26 - INFO - Filtrando datos posteriores a 1765573202
+2025-12-16 00:32:26 - INFO - Datos insertados exitosamente
+2025-12-16 00:32:26 - INFO - Datos insertados exitosamente
+2025-12-16 00:32:26 - INFO - Datos insertados exitosamente
+2025-12-16 00:32:26 - INFO - Datos insertados exitosamente
+2025-12-16 00:32:26 - INFO - Datos insertados exitosamente
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:26 - INFO - Obteniendo los datos de la base de datos
+2025-12-16 00:32:29 - INFO - Iniciando proceso de entrenamiento del modelo
+2025-12-16 00:32:29 - INFO - Cargando datos históricos
+2025-12-16 00:32:29 - INFO - Datos cargados correctamente
+2025-12-16 00:32:29 - INFO - Starting data enrichment process
+2025-12-16 00:32:29 - INFO - Convirtiendo columna date a datetime
+2025-12-16 00:32:29 - INFO - Generando variables temporales
+2025-12-16 00:32:29 - INFO - Calculando retornos
+2025-12-16 00:32:29 - INFO - Calculando volatilidad móvil de 20 días
+2025-12-16 00:32:29 - INFO - Calculando medias móviles
+2025-12-16 00:32:29 - INFO - Calculando RSI
+2025-12-16 00:32:29 - INFO - Generando variable objetivo
+2025-12-16 00:32:29 - INFO - Eliminando filas con valores NaN
+2025-12-16 00:32:29 - INFO - Filas eliminadas: 49
+2025-12-16 00:32:29 - INFO - Proceso de enriquecimiento completado exitosamente
+2025-12-16 00:32:29 - INFO - Datos enriquecidos correctamente
+2025-12-16 00:32:29 - INFO - Iniciando análisis exploratorio de datos (EDA)
+2025-12-16 00:32:29 - INFO - Creando directorio para visualizaciones: src/static/eda/
+2025-12-16 00:32:29 - INFO - Generando gráfico de distribución de la variable objetivo
+2025-12-16 00:32:29 - INFO - Generando matriz de correlación
+2025-12-16 00:32:30 - INFO - Generando gráfico de serie temporal
+2025-12-16 00:32:30 - INFO - Guardando estadísticas descriptivas
+2025-12-16 00:32:30 - INFO - EDA completado exitosamente
+2025-12-16 00:32:30 - INFO - EDA realizado correctamente
+2025-12-16 00:32:30 - INFO - Obteniendo lista de features para el modelo
+2025-12-16 00:32:30 - INFO - Features seleccionadas: returns_prev_day, volatility_20d, sma_20, sma_50, rsi, day_of_week, month, quarter, sma_ratio, sma_cross, volatility_ratio, rsi_oversold, rsi_overbought, returns_2d, returns_5d
+2025-12-16 00:32:30 - INFO - Features obtenidos correctamente
+2025-12-16 00:32:30 - INFO - Datos de entrenamiento: 353 muestras
+2025-12-16 00:32:30 - INFO - Datos de prueba: 89 muestras
+2025-12-16 00:32:30 - INFO - Fecha límite entrenamiento: 2025-08-08 16:00:02+00:00
+2025-12-16 00:32:30 - INFO - Fecha inicio prueba: 2025-08-11 16:00:02+00:00
+
+2025-12-16 00:32:30 - INFO - 1. Análisis de distribución de clases:
+2025-12-16 00:32:30 - INFO - Train - Distribución: {1: 185, 0: 168}
+2025-12-16 00:32:30 - INFO - Test - Distribución: {1: 47, 0: 42}
+2025-12-16 00:32:30 - INFO - Train - Proporción clase 1: 0.524
+2025-12-16 00:32:30 - INFO - Test - Proporción clase 1: 0.528
+
+2025-12-16 00:32:30 - INFO - 2. Análisis de correlaciones:
+2025-12-16 00:32:30 - INFO - Correlaciones altas (>0.7) entre features:
+2025-12-16 00:32:30 - INFO - volatility_20d vs volatility_ratio: 0.868
+2025-12-16 00:32:30 - INFO - sma_20 vs sma_50: 0.921
+2025-12-16 00:32:30 - INFO - rsi vs sma_ratio: 0.917
+2025-12-16 00:32:30 - INFO - month vs quarter: 0.963
+2025-12-16 00:32:30 - INFO - sma_ratio vs returns_5d: 0.750
+2025-12-16 00:32:30 - INFO - Datos después de feature engineering: 383 muestras
+2025-12-16 00:32:30 - INFO - Features adicionales creadas: 15
+
+2025-12-16 00:32:30 - INFO - 4. Comparando múltiples algoritmos: RandomForest, XGBoost y LogisticRegression
+2025-12-16 00:32:30 - INFO - 
+--- RandomForest ---
+2025-12-16 00:32:30 - INFO - Accuracy: 0.8701
+2025-12-16 00:32:30 - INFO - AUC: 0.9160
+2025-12-16 00:32:30 - INFO - 
+--- XGBoost ---
+2025-12-16 00:32:31 - INFO - Accuracy: 0.9091
+2025-12-16 00:32:31 - INFO - AUC: 0.9824
+2025-12-16 00:32:31 - INFO - 
+--- LogisticRegression ---
+2025-12-16 00:32:31 - INFO - Accuracy: 0.6104
+2025-12-16 00:32:31 - INFO - AUC: 0.6348
+2025-12-16 00:32:31 - INFO - 
+5. Resumen de resultados:
+2025-12-16 00:32:31 - INFO - 
+6. Optimización de threshold para XGBoost:
+2025-12-16 00:32:31 - INFO - 
+Métricas de error para probabilidades:
+2025-12-16 00:32:31 - INFO - RMSE: 0.2595
+2025-12-16 00:32:31 - INFO - MAE: 0.1020
+2025-12-16 00:32:31 - INFO - Interpretación:
+2025-12-16 00:32:31 - INFO - - RMSE: Error cuadrático medio de 0.2595 (menor es mejor, rango 0-1)
+2025-12-16 00:32:31 - INFO - - MAE: Error absoluto medio de 0.1020 (menor es mejor, rango 0-1)
+2025-12-16 00:32:31 - INFO - Threshold 0.30: F1=0.932, Accuracy=0.922
+2025-12-16 00:32:31 - INFO - Threshold 0.35: F1=0.932, Accuracy=0.922
+2025-12-16 00:32:31 - INFO - Threshold 0.40: F1=0.920, Accuracy=0.909
+2025-12-16 00:32:31 - INFO - Threshold 0.45: F1=0.920, Accuracy=0.909
+2025-12-16 00:32:31 - INFO - Threshold 0.50: F1=0.920, Accuracy=0.909
+2025-12-16 00:32:31 - INFO - Threshold 0.55: F1=0.920, Accuracy=0.909
+2025-12-16 00:32:31 - INFO - Threshold 0.60: F1=0.907, Accuracy=0.896
+2025-12-16 00:32:31 - INFO - Threshold 0.65: F1=0.907, Accuracy=0.896
+2025-12-16 00:32:31 - INFO - Threshold 0.70: F1=0.907, Accuracy=0.896
+2025-12-16 00:32:31 - INFO - Threshold 0.75: F1=0.918, Accuracy=0.909
+2025-12-16 00:32:31 - INFO - 
+Mejor threshold: 0.30 (F1=0.932)
+2025-12-16 00:32:31 - INFO - Modelo y threshold óptimo guardados exitosamente
+2025-12-16 00:32:31 - INFO - Mejor modelo: XGBoost
+2025-12-16 00:32:31 - INFO - Mejor AUC: 0.9824
+2025-12-16 00:32:31 - INFO - Accuracy: 0.9091
+2025-12-16 00:32:31 - INFO - Threshold óptimo: 0.30
+2025-12-16 00:32:31 - INFO - Iniciando proceso de predicción
+2025-12-16 00:32:31 - INFO - Cargando modelo y threshold óptimo
+2025-12-16 00:32:31 - INFO - Modelo cargado: XGBoost
+2025-12-16 00:32:31 - INFO - Threshold óptimo: 0.30
+2025-12-16 00:32:31 - INFO - 
+Métricas del modelo:
+2025-12-16 00:32:31 - INFO - RMSE: 0.2595
+2025-12-16 00:32:31 - INFO - MAE: 0.1020
+2025-12-16 00:32:31 - INFO - AUC: 0.9824
+2025-12-16 00:32:31 - INFO - Accuracy: 0.9091
+2025-12-16 00:32:31 - INFO - F1-Score: 0.9318
+2025-12-16 00:32:31 - INFO - Cargando datos más recientes
+2025-12-16 00:32:31 - INFO - Starting data enrichment process
+2025-12-16 00:32:31 - INFO - Convirtiendo columna date a datetime
+2025-12-16 00:32:31 - INFO - Generando variables temporales
+2025-12-16 00:32:31 - INFO - Calculando retornos
+2025-12-16 00:32:31 - INFO - Calculando volatilidad móvil de 20 días
+2025-12-16 00:32:31 - INFO - Calculando medias móviles
+2025-12-16 00:32:31 - INFO - Calculando RSI
+2025-12-16 00:32:31 - INFO - Generando variable objetivo
+2025-12-16 00:32:31 - INFO - Eliminando filas con valores NaN
+2025-12-16 00:32:31 - INFO - Filas eliminadas: 49
+2025-12-16 00:32:31 - INFO - Proceso de enriquecimiento completado exitosamente
+2025-12-16 00:32:31 - INFO - Preparando features para predicción
+2025-12-16 00:32:31 - INFO - Obteniendo lista de features para el modelo
+2025-12-16 00:32:31 - INFO - Features seleccionadas: returns_prev_day, volatility_20d, sma_20, sma_50, rsi, day_of_week, month, quarter, sma_ratio, sma_cross, volatility_ratio, rsi_oversold, rsi_overbought, returns_2d, returns_5d
+2025-12-16 00:32:31 - INFO - Realizando predicción
+2025-12-16 00:32:31 - INFO - Predicción completada: {'prediccion': 0, 'probabilidad': 0.06130216643214226, 'threshold': 0.3, 'fecha': Timestamp('2025-12-15 16:00:02+0000', tz='UTC'), 'precio_actual': 287.739990234375, 'metricas_modelo': {'rmse': 0.25946687427032505, 'mae': 0.10198919475078583, 'auc': 0.9823848238482386, 'accuracy': 0.9090909090909091, 'f1': 0.9318181818181818}}
+2025-12-16 00:32:31 - INFO - Iniciando proceso de entrenamiento del modelo ARIMA
+2025-12-16 00:32:31 - INFO - Cargando datos
+2025-12-16 00:32:31 - INFO - Dividiendo datos en entrenamiento y prueba
+2025-12-16 00:32:31 - INFO - Verificando estacionariedad de la serie
+2025-12-16 00:32:31 - INFO - Calculando métricas
+2025-12-16 00:32:31 - INFO - RMSE: 19.70
+2025-12-16 00:32:31 - INFO - MAE: 16.86
+2025-12-16 00:32:31 - INFO - Guardando modelo ARIMA
+2025-12-16 00:32:31 - INFO - Guardando métricas
+2025-12-16 00:32:31 - INFO - Modelo ARIMA entrenado y guardado exitosamente
+2025-12-16 00:32:33 - INFO - Iniciando proceso de predicción
+2025-12-16 00:32:33 - INFO - Cargando modelo y threshold óptimo
+2025-12-16 00:32:33 - INFO - Modelo cargado: XGBoost
+2025-12-16 00:32:33 - INFO - Threshold óptimo: 0.30
+2025-12-16 00:32:33 - INFO - 
+Métricas del modelo:
+2025-12-16 00:32:33 - INFO - RMSE: 0.2595
+2025-12-16 00:32:33 - INFO - MAE: 0.1020
+2025-12-16 00:32:33 - INFO - AUC: 0.9824
+2025-12-16 00:32:33 - INFO - Accuracy: 0.9091
+2025-12-16 00:32:33 - INFO - F1-Score: 0.9318
+2025-12-16 00:32:33 - INFO - Cargando datos más recientes
+2025-12-16 00:32:33 - INFO - Starting data enrichment process
+2025-12-16 00:32:33 - INFO - Convirtiendo columna date a datetime
+2025-12-16 00:32:33 - INFO - Generando variables temporales
+2025-12-16 00:32:33 - INFO - Calculando retornos
+2025-12-16 00:32:33 - INFO - Calculando volatilidad móvil de 20 días
+2025-12-16 00:32:33 - INFO - Calculando medias móviles
+2025-12-16 00:32:33 - INFO - Calculando RSI
+2025-12-16 00:32:33 - INFO - Generando variable objetivo
+2025-12-16 00:32:33 - INFO - Eliminando filas con valores NaN
+2025-12-16 00:32:33 - INFO - Filas eliminadas: 49
+2025-12-16 00:32:33 - INFO - Proceso de enriquecimiento completado exitosamente
+2025-12-16 00:32:33 - INFO - Preparando features para predicción
+2025-12-16 00:32:33 - INFO - Obteniendo lista de features para el modelo
+2025-12-16 00:32:33 - INFO - Features seleccionadas: returns_prev_day, volatility_20d, sma_20, sma_50, rsi, day_of_week, month, quarter, sma_ratio, sma_cross, volatility_ratio, rsi_oversold, rsi_overbought, returns_2d, returns_5d
+2025-12-16 00:32:33 - INFO - Realizando predicción
+2025-12-16 00:32:33 - INFO - Predicción completada: {'prediccion': 0, 'probabilidad': 0.06130216643214226, 'threshold': 0.3, 'fecha': Timestamp('2025-12-15 16:00:02+0000', tz='UTC'), 'precio_actual': 287.739990234375, 'metricas_modelo': {'rmse': 0.25946687427032505, 'mae': 0.10198919475078583, 'auc': 0.9823848238482386, 'accuracy': 0.9090909090909091, 'f1': 0.9318181818181818}}
